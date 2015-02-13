@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E39320461A8E633D0052D3CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E39320451A8E633D0052D3CD /* main.m */; };
-		E393204E1A8E634C0052D3CD /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = E393204D1A8E634C0052D3CD /* Jogador.m */; };
-		E39320511A8E6BFC0052D3CD /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = E39320501A8E6BFC0052D3CD /* Fila.m */; };
+		E3F4A3641A8E6F3D006B2214 /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F4A3611A8E6F3D006B2214 /* Fila.m */; };
+		E3F4A3651A8E6F3D006B2214 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F4A3631A8E6F3D006B2214 /* Jogador.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +27,10 @@
 /* Begin PBXFileReference section */
 		E39320421A8E633D0052D3CD /* Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Genius; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39320451A8E633D0052D3CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E393204C1A8E634C0052D3CD /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		E393204D1A8E634C0052D3CD /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
-		E393204F1A8E6BFC0052D3CD /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
-		E39320501A8E6BFC0052D3CD /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
+		E3F4A3601A8E6F3D006B2214 /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
+		E3F4A3611A8E6F3D006B2214 /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
+		E3F4A3621A8E6F3D006B2214 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		E3F4A3631A8E6F3D006B2214 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +47,6 @@
 		E39320391A8E633D0052D3CD = {
 			isa = PBXGroup;
 			children = (
-				E393204F1A8E6BFC0052D3CD /* Fila.h */,
-				E39320501A8E6BFC0052D3CD /* Fila.m */,
-				E393204C1A8E634C0052D3CD /* Jogador.h */,
-				E393204D1A8E634C0052D3CD /* Jogador.m */,
 				E39320441A8E633D0052D3CD /* Genius */,
 				E39320431A8E633D0052D3CD /* Products */,
 			);
@@ -67,6 +63,10 @@
 		E39320441A8E633D0052D3CD /* Genius */ = {
 			isa = PBXGroup;
 			children = (
+				E3F4A3601A8E6F3D006B2214 /* Fila.h */,
+				E3F4A3611A8E6F3D006B2214 /* Fila.m */,
+				E3F4A3621A8E6F3D006B2214 /* Jogador.h */,
+				E3F4A3631A8E6F3D006B2214 /* Jogador.m */,
 				E39320451A8E633D0052D3CD /* main.m */,
 			);
 			path = Genius;
@@ -128,8 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E39320511A8E6BFC0052D3CD /* Fila.m in Sources */,
-				E393204E1A8E634C0052D3CD /* Jogador.m in Sources */,
+				E3F4A3641A8E6F3D006B2214 /* Fila.m in Sources */,
+				E3F4A3651A8E6F3D006B2214 /* Jogador.m in Sources */,
 				E39320461A8E633D0052D3CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +244,7 @@
 				E393204B1A8E633D0052D3CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
