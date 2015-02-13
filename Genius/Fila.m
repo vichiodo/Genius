@@ -86,21 +86,6 @@
     
 }
 
--(void) inverteFila
-{
-    Pilha *pilhaAux = [[Pilha alloc] init];
-    while(![self vazio])
-    {
-        [pilhaAux empilhar:[self ler]];
-        [self desenfileirar];
-    }
-    while(![pilhaAux vazio])
-    {
-        [self enfileirar: [pilhaAux topo]];
-        [pilhaAux desempilhar];
-    }
-    
-}
 
 
 @end

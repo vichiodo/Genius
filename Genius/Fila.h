@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Pilha.h"
+
 
 @interface Fila : NSObject
 {
@@ -20,5 +20,5 @@
 -(bool) vazio;
 -(void) imprimir;
 -(void) busca: (NSObject *)elem;
--(void) inverteFila;
+
 @end
