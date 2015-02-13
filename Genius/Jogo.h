@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface Jogo : NSObject
+
+
+-(void)clearScreen;
 
 @end
