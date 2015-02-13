@@ -15,4 +15,32 @@
     NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 }
 
+-(void)Menu{
+    int opcao;
+    
+    NSLog(@"Digite a opção desejada \n1 - JOGAR \n2 - CADASTRAR OUTRO JOGADOR \n3 - SAIR\n");
+    scanf("%d",&opcao);
+    switch (opcao) {
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        default:
+            NSLog(@"Dado invalido Digite novamente");
+            [self Menu];
+            break;
+    }
+}
+
+-(void)paginaInicial{
+    char player[40];
+    
+    NSLog(@"Escreva seu nome :\n");
+    scanf("%s",player);
+}
 @end

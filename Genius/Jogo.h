@@ -13,5 +13,7 @@
 
 
 -(void)clearScreen;
+-(void)Menu;
+-(void)paginaInicial;
 
 @end
