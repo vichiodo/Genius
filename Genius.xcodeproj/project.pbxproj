@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4BDD1CC1A8E6FCB00770682 /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDD1C91A8E6FCB00770682 /* Fila.m */; };
-		D4BDD1CD1A8E6FCB00770682 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDD1CB1A8E6FCB00770682 /* Jogador.m */; };
+		D4BDD1D41A8E7C4200770682 /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDD1CF1A8E7C4200770682 /* Fila.m */; };
+		D4BDD1D51A8E7C4200770682 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDD1D11A8E7C4200770682 /* Jogador.m */; };
+		D4BDD1D61A8E7C4200770682 /* Jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BDD1D31A8E7C4200770682 /* Jogo.m */; };
 		E39320461A8E633D0052D3CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E39320451A8E633D0052D3CD /* main.m */; };
-		E3F4A3641A8E6F3D006B2214 /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F4A3611A8E6F3D006B2214 /* Fila.m */; };
-		E3F4A3651A8E6F3D006B2214 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F4A3631A8E6F3D006B2214 /* Jogador.m */; };
 		E3F4A3681A8E72EB006B2214 /* Jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F4A3671A8E72EB006B2214 /* Jogo.m */; };
 /* End PBXBuildFile section */
 
@@ -28,17 +27,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D4BDD1C81A8E6FCB00770682 /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
-		D4BDD1C91A8E6FCB00770682 /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
-		D4BDD1CA1A8E6FCB00770682 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		D4BDD1CB1A8E6FCB00770682 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		D4BDD1CE1A8E7C4200770682 /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
+		D4BDD1CF1A8E7C4200770682 /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
+		D4BDD1D01A8E7C4200770682 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		D4BDD1D11A8E7C4200770682 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
+		D4BDD1D21A8E7C4200770682 /* Jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogo.h; sourceTree = "<group>"; };
+		D4BDD1D31A8E7C4200770682 /* Jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogo.m; sourceTree = "<group>"; };
 		E39320421A8E633D0052D3CD /* Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Genius; sourceTree = BUILT_PRODUCTS_DIR; };
 		E39320451A8E633D0052D3CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E3F4A3601A8E6F3D006B2214 /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
-		E3F4A3611A8E6F3D006B2214 /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
-		E3F4A3621A8E6F3D006B2214 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		E3F4A3631A8E6F3D006B2214 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
-		E3F4A3661A8E72EB006B2214 /* Jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogo.h; sourceTree = "<group>"; };
 		E3F4A3671A8E72EB006B2214 /* Jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,15 +68,13 @@
 		E39320441A8E633D0052D3CD /* Genius */ = {
 			isa = PBXGroup;
 			children = (
-				E3F4A3601A8E6F3D006B2214 /* Fila.h */,
-				E3F4A3611A8E6F3D006B2214 /* Fila.m */,
-				E3F4A3621A8E6F3D006B2214 /* Jogador.h */,
-				E3F4A3631A8E6F3D006B2214 /* Jogador.m */,
 				E39320451A8E633D0052D3CD /* main.m */,
-				D4BDD1C81A8E6FCB00770682 /* Fila.h */,
-				D4BDD1C91A8E6FCB00770682 /* Fila.m */,
-				D4BDD1CA1A8E6FCB00770682 /* Jogador.h */,
-				D4BDD1CB1A8E6FCB00770682 /* Jogador.m */,
+				D4BDD1CE1A8E7C4200770682 /* Fila.h */,
+				D4BDD1CF1A8E7C4200770682 /* Fila.m */,
+				D4BDD1D01A8E7C4200770682 /* Jogador.h */,
+				D4BDD1D11A8E7C4200770682 /* Jogador.m */,
+				D4BDD1D21A8E7C4200770682 /* Jogo.h */,
+				D4BDD1D31A8E7C4200770682 /* Jogo.m */,
 			);
 			path = Genius;
 			sourceTree = "<group>";
@@ -141,12 +135,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BDD1D61A8E7C4200770682 /* Jogo.m in Sources */,
+				D4BDD1D41A8E7C4200770682 /* Fila.m in Sources */,
 				E3F4A3681A8E72EB006B2214 /* Jogo.m in Sources */,
-				E3F4A3641A8E6F3D006B2214 /* Fila.m in Sources */,
-				E3F4A3651A8E6F3D006B2214 /* Jogador.m in Sources */,
+				D4BDD1D51A8E7C4200770682 /* Jogador.m in Sources */,
 				E39320461A8E633D0052D3CD /* main.m in Sources */,
-				D4BDD1CD1A8E6FCB00770682 /* Jogador.m in Sources */,
-				D4BDD1CC1A8E6FCB00770682 /* Fila.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
