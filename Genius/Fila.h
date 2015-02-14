@@ -14,6 +14,7 @@
     NSMutableArray *elementos;
 }
 
+-(id) init;
 -(void) enfileirar:(NSObject *)elem;
 -(void) desenfileirar;
 -(NSObject *) ler;

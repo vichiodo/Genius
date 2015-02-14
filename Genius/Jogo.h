@@ -12,8 +12,11 @@
 @interface Jogo : NSObject
 
 
+-(instancetype) init;
 -(void)clearScreen;
--(void)Menu;
+-(void)menu;
 -(void)paginaInicial;
+-(void)comecarJogo;
+-(void)lancarSequencia;
 
 @end

@@ -40,12 +40,11 @@
         contador = contador++;
 }
 
--(void)maiorPontuacao:(int)novaPontuacao
+-(int)maiorPontuacao:(int)novaPontuacao
 {
     if(novaPontuacao > pontuacao)
         pontuacao = novaPontuacao;
-    else
-        return;
+    return pontuacao;
 }
 
 
