@@ -32,7 +32,7 @@
     switch (opcao) {
         case 1:
             [self clearScreen];
-            [self paginaInicial];
+            [self comecarJogo];
             break;
         case 2:
             [self clearScreen];
@@ -67,7 +67,11 @@
 
 //Após o jogador escrever o nome.
 -(void)comecarJogo{
-    
+    for (int i = 0; i<3; i++) {
+        [NSThread sleepForTimeInterval:1.5f];
+        NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+        NSLog(@"%i", i+1);
+    }
 }
 
 //Método para lançar a sequencia de cores.
