@@ -7,9 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Fila.h"
+#import "Jogador.h"
 
 
 @interface Jogo : NSObject
+{
+    Fila *jogadores;
+    Fila *jogo;
+    Jogador *j;
+}
+
+//Filas para o jogo
+@property Fila *jogadores;
+@property Fila *jogo;
+//Jogador da rodada
+@property Jogador *j;
 
 
 -(instancetype) init;

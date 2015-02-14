@@ -7,8 +7,12 @@
 //
 
 #import "Jogo.h"
+#import "Fila.h"
+#import "Jogador.h"
 
 @implementation Jogo
+
+@synthesize jogadores, jogo, j;
 
 -(instancetype) init{
     self = [super init];
@@ -50,6 +54,15 @@
     
     NSLog(@"Escreva seu nome :\n");
     scanf("%s",player);
+    
+    //Transformando de char para string
+    NSString *nome = [NSString stringWithFormat:@"%c", player];
+    
+    //Inicializando um jogador e setando o nome que nao esta dando certo
+    j = [[Jogador alloc ]initWithLogin: nome];
+    
+    //Colocando jogador na fila
+    [jogadores enfileirar: j];
 }
 
 //Após o jogador escrever o nome.
