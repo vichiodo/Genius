@@ -33,6 +33,7 @@
         case 1:
             [self clearScreen];
             [self comecarJogo];
+            [self lancarSequencia];
             break;
         case 2:
             [self clearScreen];
@@ -40,7 +41,7 @@
             break;
         case 3:
             [self clearScreen];
-            [self menu];
+            exit(0);
             break;
         default:
             NSLog(@"Dado inválido. Digite novamente");
@@ -79,33 +80,24 @@
 //Método para lançar uma só cor.
 -(void)gerarCor{
     //Só to colocando o metodo para número randomico por enquanto, falta colocar o que fazer com ele - Andre
-    //Gera 0, 1, 2 ou 3
-    NSUInteger random = arc4random_uniform(4);
-    
-    //Switch case incompleto
-    switch (random) {
-        case 0:
-            <#statements#>
-            break;
-        case 1:
-            <#statements#>
-            break;
-        case 2:
-            <#statements#>
-            break;
-        case 3:
-            <#statements#>
-            break;
-            
-        default:
-            break;
+    //Fila do jogo com 100 numeros de 1 a 4 - Vivi
+    for(int i = 0; i<100; i++){
+        //Gera 1, 2, 3 ou 4
+        NSInteger random = arc4random_uniform(4)+1;
+        NSString *s = [NSString stringWithFormat:@"%ld", (long)random];
+        [jogo enfileirar:s];
     }
+
     
 }
 
 //Metodo para lançar a sequencia inteira
 -(void)lancarSequencia{
     [self gerarCor];
+    //Nao sei o que fazer para apresentar as sequencias por rodada - Vivi
+    for (int i = 0; i<100; i++) {
+        NSLog(@"")
+    }
 }
 
 @end
