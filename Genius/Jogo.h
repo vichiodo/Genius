@@ -31,5 +31,6 @@
 -(void)paginaInicial;
 -(void)comecarJogo;
 -(void)lancarSequencia;
+-(void)gerarCor;
 
 @end

@@ -56,7 +56,7 @@
     scanf("%s",player);
     
     //Transformando de char para string
-    NSString *nome = [NSString stringWithFormat:@"%c", player];
+    NSString *nome = [NSString stringWithFormat:@"%s", player];
     
     //Inicializando um jogador e setando o nome que nao esta dando certo
     j = [[Jogador alloc ]initWithLogin: nome];
@@ -74,8 +74,38 @@
     }
 }
 
-//Método para lançar a sequencia de cores.
--(void)lancarSequencia{
+
+//Eu separei gerar uma cor só de lancar a sequencia inteira, pode inverter se achar que é melhor - Andre
+//Método para lançar uma só cor.
+-(void)gerarCor{
+    //Só to colocando o metodo para número randomico por enquanto, falta colocar o que fazer com ele - Andre
+    //Gera 0, 1, 2 ou 3
+    NSUInteger random = arc4random_uniform(4);
+    
+    //Switch case incompleto
+    switch (random) {
+        case 0:
+            <#statements#>
+            break;
+        case 1:
+            <#statements#>
+            break;
+        case 2:
+            <#statements#>
+            break;
+        case 3:
+            <#statements#>
+            break;
+            
+        default:
+            break;
+    }
     
 }
+
+//Metodo para lançar a sequencia inteira
+-(void)lancarSequencia{
+    [self gerarCor];
+}
+
 @end
