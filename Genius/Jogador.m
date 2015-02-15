@@ -32,18 +32,16 @@
     return self;
 }
 
--(void) incremento
+-(int) incremento
 {
-    if(contador < 0)
-        return ;
-    else
-        contador = contador++;
+    return ++contador;
 }
 
 -(int)maiorPontuacao:(int)novaPontuacao
 {
     if(novaPontuacao > pontuacao)
         pontuacao = novaPontuacao;
+    
     return pontuacao;
 }
 

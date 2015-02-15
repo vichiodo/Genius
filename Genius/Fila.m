@@ -8,6 +8,8 @@
 
 #import "Fila.h"
 
+#import "Fila.h"
+
 @implementation Fila
 -(id)init {
     self = [super init];
@@ -15,16 +17,26 @@
     return self;
 }
 
+@synthesize elementos;
+
 -(void) enfileirar:(NSObject *)elem {
     [elementos addObject: elem];
 }
 
 -(void) desenfileirar
 {
-
+    
     if([self vazio] != true)
         [elementos removeObjectAtIndex:0];
+    
+}
 
+-(void)desenfileirarTudo
+{
+    if([self vazio])
+        return;
+    else
+        [elementos removeAllObjects];
 }
 
 
@@ -45,21 +57,56 @@
 
 -(void) imprimir
 {
+    
     Fila *filaAux = [[Fila alloc] init];
     for (int i = 0; [elementos count]; i++)
     {
         NSLog(@"element at index: %d content: %@", i , [self ler]);
+        
         [filaAux enfileirar: elementos[0]];
         [elementos removeObjectAtIndex:0];
         
     }
-        while(![filaAux vazio])
-        {
-            [self enfileirar: [filaAux ler]];
-            [filaAux desenfileirar];
-            
-        }
+    while(![filaAux vazio])
+    {
+        [self enfileirar: [filaAux ler]];
+        [filaAux desenfileirar];
+        
+    }
     
+}
+
+-(void) imprimirOverride
+{
+    NSInteger aux;
+    Fila *filaAux = [[Fila alloc] init];
+    printf("Sequencia: ");
+    for (int i = 0; [elementos count]; i++)
+    {
+        aux =  (NSInteger) [self ler];
+        if(aux == 311)
+            aux = 1;
+        else if(aux == 567)
+            aux = 2;
+        else if(aux == 823)
+            aux = 3;
+        else if(aux == 1079)
+            aux = 4;
+        else
+            return;
+        printf( "%lu     ", aux);
+        
+        [filaAux enfileirar: elementos[0]];
+        [elementos removeObjectAtIndex:0];
+        
+    }
+    printf("\n");
+    while(![filaAux vazio])
+    {
+        [self enfileirar: [filaAux ler]];
+        [filaAux desenfileirar];
+        
+    }
 }
 
 -(void) busca:(NSObject *)elem
