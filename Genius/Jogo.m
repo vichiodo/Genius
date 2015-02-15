@@ -24,6 +24,7 @@
 }
 
 
+
 -(void)menu{
     int opcao;
     
@@ -66,6 +67,52 @@
     [jogadores enfileirar: j];
 }
 
+-(void)run
+{
+    //aloquei o jogador para testar na verdade, mas sintam-se a vontade de adaptar o metodo.
+    Jogador *player = [[Jogador alloc] initWithLogin:(NSString *) @"Rafael" ];
+    int pontuacao = 0;
+    
+    // instancia a fila que o jogador irá preencher e  servira de
+    // parametro a fila criada pela maquina
+    Fila *jogadores = [[Fila alloc] init];
+    do
+    {
+        //inicia a fila desenfileirando tudo, porque ela tem que ser
+        //preenchida a cada rodada
+        [jogadores desenfileirarTudo];
+        
+        //enfileira a na fila da maquina o numero ja criado
+        [jogo enfileirar: [NSNumber numberWithUnsignedLong:[self gerarCor]]];
+        
+        //imprime a fila convertida no metodo convertido
+        [jogo imprimirOverride];
+        
+        //metodo que cria um countdown e prepara jogador antes da proxima jogada dele
+        [self prepareRound];
+        
+        //contador da quantidade de elementos a serem preenchidos pelo jogador
+        int count = (int) [[jogo elementos]count];
+        
+        for(int i = 0; i < count; i++)
+        {
+            //enfileira cada escolha do jogador pelo metodo choice
+            [jogadores enfileirar: [NSNumber numberWithUnsignedLong: [ self choice]]];
+        }
+        //contador local de jogadas
+        pontuacao++;
+        
+    } while([self check:jogadores] == true);
+    
+    //corrige a pontuacao por conta do laço de repetição
+    pontuacao --;
+    //dados do jogador
+    NSLog (@"Quantidade de acertos: %d", pontuacao);
+    NSLog(@"Maior pontuacao do jogador %@ é : %d", [player login] , [player maiorPontuacao: pontuacao]);
+    NSLog(@"Quantidade de partidas jogadas: %d ", [player incremento]);
+    NSLog(@"Game over!!!!");
+}
+
 //Após o jogador escrever o nome.
 -(void)comecarJogo{
     for (int i = 0; i<3; i++) {
@@ -75,19 +122,33 @@
     }
 }
 
+-(void)prepareRound
+{
+    for(int i = 3; i > 0; i--)
+    {
+        printf("----------  %d  --------------- \n", i);
+        [NSThread sleepForTimeInterval:2.0f];
+        
+    }
+    [self clearScreen];
+}
+
+-(bool)check:(Fila *) jogadores
+{
+    if([[jogo elementos]isEqualToArray: [jogadores elementos]])
+        return true;
+    else
+        return false;
+}
+
 
 //Eu separei gerar uma cor só de lancar a sequencia inteira, pode inverter se achar que é melhor - Andre
 //Método para lançar uma só cor.
--(void)gerarCor{
+-(NSInteger)gerarCor{
     //Só to colocando o metodo para número randomico por enquanto, falta colocar o que fazer com ele - Andre
-    //Fila do jogo com 100 numeros de 1 a 4 - Vivi
-    for(int i = 0; i<100; i++){
-        //Gera 1, 2, 3 ou 4
-        NSInteger random = arc4random_uniform(4)+1;
-        NSString *s = [NSString stringWithFormat:@"%ld", (long)random];
-        [jogo enfileirar:s];
-    }
-
+    //Gera 1, 2, 3 ou 4
+    NSInteger random = arc4random_uniform(4)+1;
+    return random;
     
 }
 
@@ -96,7 +157,7 @@
     [self gerarCor];
     //Nao sei o que fazer para apresentar as sequencias por rodada - Vivi
     for (int i = 0; i<100; i++) {
-        NSLog(@"")
+        NSLog(@"");
     }
 }
 

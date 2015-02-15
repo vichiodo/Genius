@@ -31,6 +31,9 @@
 -(void)paginaInicial;
 -(void)comecarJogo;
 -(void)lancarSequencia;
--(void)gerarCor;
+-(NSInteger)gerarCor;
+-(void)run;
+-(void)prepareRound;
+-(BOOL)check:(Fila *) jogadores;
 
 @end
