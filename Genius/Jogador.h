@@ -22,7 +22,7 @@
 
 -(instancetype) init;
 -(instancetype) initWithLogin:(NSString *) login;
--(void)incremento;
+-(int)incremento;
 -(int) maiorPontuacao:(int) novaPontuacao;
 
 @end

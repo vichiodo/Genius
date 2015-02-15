@@ -14,12 +14,14 @@
     NSMutableArray *elementos;
 }
 
--(id) init;
+@property NSMutableArray *elementos;
+
 -(void) enfileirar:(NSObject *)elem;
 -(void) desenfileirar;
+-(void) desenfileirarTudo;
 -(NSObject *) ler;
 -(bool) vazio;
 -(void) imprimir;
 -(void) busca: (NSObject *)elem;
-
+-(void) imprimirOverride;
 @end
