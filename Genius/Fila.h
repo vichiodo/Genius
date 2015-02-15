@@ -2,8 +2,8 @@
 //  Fila.h
 //  Fila
 //
-//  Created by Rafael  Hieda on 06/02/15.
-//  Copyright (c) 2015 Rafael  Hieda. All rights reserved.
+//  Created by FRAV GROUP on 06/02/15.
+//  Copyright (c) 2015 FRAV GROUP. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,6 +14,7 @@
     NSMutableArray *elementos;
 }
 
+-(id) init;
 -(void) enfileirar:(NSObject *)elem;
 -(void) desenfileirar;
 -(NSObject *) ler;
