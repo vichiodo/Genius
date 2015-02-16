@@ -35,5 +35,7 @@
 -(void)run;
 -(void)prepareRound;
 -(BOOL)check:(Fila *) jogadores;
+-(void)choice;
+-(void)terminarJogo;
 
 @end

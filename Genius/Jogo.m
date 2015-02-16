@@ -144,7 +144,7 @@
 
 //Método para lançar uma só cor.
 -(NSInteger)gerarCor{
-    //Só to colocando o metodo para número randomico por enquanto, falta colocar o que fazer com ele - Andre
+    //Metodo para gerar numero randomico
     //Gera 1, 2, 3 ou 4
     NSInteger random = arc4random_uniform(4)+1;
     return random;
@@ -153,11 +153,36 @@
 
 //Metodo para lançar a sequencia inteira
 -(void)lancarSequencia{
-    [self gerarCor];
-    //Nao sei o que fazer para apresentar as sequencias por rodada - Vivi
-    for (int i = 0; i<100; i++) {
-        NSLog(@"");
+    [jogo enfileirar: [NSNumber numberWithUnsignedLong: [self gerarCor]]];
+    [jogo imprimir];
+    [self choice];
+    if (![self check: jogo]) {
+        [self terminarJogo];
+    } else {
+        [self lancarSequencia];
     }
+}
+
+-(void)terminarJogo{
+    bool opcao;
+    NSLog(@"Você perdeu \n");
+    NSLog(@"Sua pontuação: %i \n", [j pontuacao]);
+    NSLog(@"Você jogou %i vezes: \n", [j incremento]);
+    NSLog(@"Sua maior pontuação: %i \n", [j maiorPontuacao: [j pontuacao]]);
+    NSLog(@"Deseja jogar novamente? \n");
+    NSLog(@"S/N \n");
+    scanf("%d", opcao);
+    if (opcao) {
+        
+    }
+}
+
+//INCOMPLETO
+-(void)choice{
+    char seq[100];
+    NSLog(@"Digite a sequência: ");
+    scanf("%s", seq );
+    error
 }
 
 @end
