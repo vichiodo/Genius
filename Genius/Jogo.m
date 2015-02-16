@@ -38,7 +38,7 @@
             break;
         case 2:
             [self clearScreen];
-            [self menu];
+            [self paginaInicial];
             break;
         case 3:
             [self clearScreen];
