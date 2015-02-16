@@ -20,7 +20,7 @@
 -(void) desenfileirar;
 -(void) desenfileirarTudo;
 -(NSObject *) ler;
--(bool) vazio;
+-(BOOL) vazio;
 -(void) imprimir;
 -(void) busca: (NSObject *)elem;
 -(void) imprimirOverride;

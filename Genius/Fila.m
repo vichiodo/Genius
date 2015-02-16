@@ -26,28 +26,26 @@
 -(void) desenfileirar
 {
     
-    if([self vazio] != true)
-        [elementos removeObjectAtIndex:0];
+    if(![self vazio])
+        [elementos  removeObjectAtIndex:0];
     
 }
 
 -(void)desenfileirarTudo
 {
-    if([self vazio])
-        return;
-    else
+    if (![self vazio])
         [elementos removeAllObjects];
 }
 
 
 - (NSObject *) ler
 {
-    if([self vazio] == false)
+    if(![self vazio])
         return [elementos firstObject];
     else return nil;
 }
 
-- (bool) vazio
+- (BOOL) vazio
 {
     if([elementos lastObject ] == nil)
         return true;
@@ -61,7 +59,7 @@
     Fila *filaAux = [[Fila alloc] init];
     for (int i = 0; [elementos count]; i++)
     {
-        NSLog(@"element at index: %d content: %@", i , [self ler]);
+        NSLog(@"Elemento no índice: %d Conteúdo: %@", i , [self ler]);
         
         [filaAux enfileirar: elementos[0]];
         [elementos removeObjectAtIndex:0];

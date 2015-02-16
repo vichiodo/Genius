@@ -70,7 +70,7 @@
 -(void)run
 {
     //aloquei o jogador para testar na verdade, mas sintam-se a vontade de adaptar o metodo.
-    Jogador *player = [[Jogador alloc] initWithLogin:(NSString *) @"Rafael" ];
+    Jogador *player = [[Jogador alloc] initWithLogin:[player login] ];
     int pontuacao = 0;
     
     // instancia a fila que o jogador irá preencher e  servira de
@@ -120,6 +120,7 @@
         NSLog(@"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         NSLog(@"%i", i+1);
     }
+    [self prepareRound];
 }
 
 -(void)prepareRound
@@ -133,7 +134,7 @@
     [self clearScreen];
 }
 
--(bool)check:(Fila *) jogadores
+-(BOOL)check:(Fila *) jogadores
 {
     if([[jogo elementos]isEqualToArray: [jogadores elementos]])
         return true;
@@ -141,8 +142,6 @@
         return false;
 }
 
-
-//Eu separei gerar uma cor só de lancar a sequencia inteira, pode inverter se achar que é melhor - Andre
 //Método para lançar uma só cor.
 -(NSInteger)gerarCor{
     //Só to colocando o metodo para número randomico por enquanto, falta colocar o que fazer com ele - Andre
