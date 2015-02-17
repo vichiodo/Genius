@@ -113,7 +113,7 @@
 -(void)menu{
     int opcao;
     
-    NSLog(@"Digite a opção desejada \n1 - JOGAR \n2 - SAIR");
+    NSLog(@"Digite a opção desejada \n1 - JOGAR \n2 - Cadastrar jogador \n3 - SAIR");
     scanf(" %d",&opcao);
     switch (opcao) {
         case 1:
@@ -122,6 +122,11 @@
             exit(0);
             break;
         case 2:
+            [self clearScreen];
+            [self paginaInicial];
+            exit(0);
+            break;
+        case 3:
             [self clearScreen];
             exit(0);
             break;
