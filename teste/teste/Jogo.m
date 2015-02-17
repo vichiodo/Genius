@@ -110,10 +110,11 @@
     return choice;
 }
 
--(void)menu{
+-(void)menu
+{
     int opcao;
     
-    NSLog(@"Digite a opção desejada \n1 - JOGAR \n2 - Cadastrar jogador \n3 - SAIR");
+    NSLog(@"Digite a opção desejada: \n1 - JOGAR \n2 - CADASTRAR OUTRO JOGADOR \n3 - SAIR");
     scanf(" %d",&opcao);
     switch (opcao) {
         case 1:
@@ -137,7 +138,8 @@
     }
 }
 
--(void)paginaInicial{
+-(void)paginaInicial
+{
     char player[40];
     
     NSLog(@"Escreva seu nome :\n");
@@ -156,14 +158,16 @@
 
 
 
--(void)terminarJogo:(int)minhaPontuacao{
+-(void)terminarJogo:(int)minhaPontuacao
+{
     char opcao[2];
-    NSLog(@"%@ você perdeu!!! ", [jogador login]);
-    NSLog(@"Sua pontuação: %d ", minhaPontuacao);
-    NSLog(@"Você jogou %d vez(es). ", [jogador incremento]);
-    NSLog(@"Sua maior pontuação: %d ", [jogador maiorPontuacao:(int)minhaPontuacao]);
-    NSLog(@"Deseja jogar novamente? ");
-    NSLog(@"Y/N ");
+    NSLog(@"%@ você perdeu!!! \n"
+    "Sua pontuação: %d \n"
+    "Você jogou %d vez(es). \n"
+    "Sua maior pontuação: %d \n"
+    "Deseja jogar novamente? \n"
+    "Y/N \n",
+    [jogador login], minhaPontuacao, [jogador incremento], [jogador maiorPontuacao:(int)minhaPontuacao]);
     scanf(" %s", opcao);
     NSString* opcao1 = [NSString stringWithCString:opcao encoding:NSUTF8StringEncoding];
     if([opcao1 boolValue]){
