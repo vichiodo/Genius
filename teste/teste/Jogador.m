@@ -2,8 +2,8 @@
 //  Jogador.m
 //  Genius
 //
-//  Created by FRAV GROUP on 13/02/15.
-//  Copyright (c) 2015 FRAV GROUP. All rights reserved.
+//  Created by Rafael  Hieda on 13/02/15.
+//  Copyright (c) 2015 Rafael Hieda. All rights reserved.
 //
 
 #import "Jogador.h"
@@ -34,7 +34,7 @@
 
 -(int) incremento
 {
-    return ++contador;
+        return ++contador;
 }
 
 -(int)maiorPontuacao:(int)novaPontuacao
@@ -42,7 +42,7 @@
     if(novaPontuacao > pontuacao)
         pontuacao = novaPontuacao;
     
-    return pontuacao;
+        return pontuacao;
 }
 
 

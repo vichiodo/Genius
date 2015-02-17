@@ -2,11 +2,9 @@
 //  Fila.m
 //  Fila
 //
-//  Created by FRAV GROUP on 06/02/15.
-//  Copyright (c) 2015 FRAV GROUP. All rights reserved.
+//  Created by Rafael  Hieda on 06/02/15.
+//  Copyright (c) 2015 Rafael  Hieda. All rights reserved.
 //
-
-#import "Fila.h"
 
 #import "Fila.h"
 
@@ -26,26 +24,28 @@
 -(void) desenfileirar
 {
     
-    if(![self vazio])
-        [elementos  removeObjectAtIndex:0];
+    if([self vazio] != true)
+        [elementos removeObjectAtIndex:0];
     
 }
 
 -(void)desenfileirarTudo
 {
-    if (![self vazio])
+    if([self vazio])
+        return;
+    else
         [elementos removeAllObjects];
 }
 
 
 - (NSObject *) ler
 {
-    if(![self vazio])
+    if([self vazio] == false)
         return [elementos firstObject];
     else return nil;
 }
 
-- (BOOL) vazio
+- (bool) vazio
 {
     if([elementos lastObject ] == nil)
         return true;
@@ -59,7 +59,7 @@
     Fila *filaAux = [[Fila alloc] init];
     for (int i = 0; [elementos count]; i++)
     {
-        NSLog(@"Elemento no índice: %d Conteúdo: %@", i , [self ler]);
+        NSLog(@"element at index: %d content: %@", i , [self ler]);
         
         [filaAux enfileirar: elementos[0]];
         [elementos removeObjectAtIndex:0];
@@ -130,7 +130,5 @@
         NSLog(@"Elemento não encontrado");
     
 }
-
-
 
 @end
