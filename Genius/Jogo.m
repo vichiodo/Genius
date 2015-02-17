@@ -129,6 +129,7 @@
             break;
         case 3:
             [self clearScreen];
+            NSLog(@"\n\n\n O GRUPINHO LINDO agradece sua visita :)");
             exit(0);
             break;
         default:

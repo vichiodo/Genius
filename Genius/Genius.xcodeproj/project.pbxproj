@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3F98FC41A8E857E00479CA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F98FC31A8E857E00479CA0 /* main.m */; };
-		E3F98FCC1A8E86FD00479CA0 /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F98FCB1A8E86FD00479CA0 /* Fila.m */; };
-		E3F98FD11A8EA85A00479CA0 /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F98FCE1A8EA85A00479CA0 /* Jogador.m */; };
-		E3F98FD21A8EA85A00479CA0 /* Jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F98FD01A8EA85A00479CA0 /* Jogo.m */; };
+		D4F86EAE1A93EB1500D8C9DA /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F86EA81A93EB1500D8C9DA /* Fila.m */; };
+		D4F86EAF1A93EB1500D8C9DA /* Jogador.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F86EAA1A93EB1500D8C9DA /* Jogador.m */; };
+		D4F86EB01A93EB1500D8C9DA /* Jogo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F86EAC1A93EB1500D8C9DA /* Jogo.m */; };
+		D4F86EB11A93EB1500D8C9DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F86EAD1A93EB1500D8C9DA /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,14 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D4F86EA71A93EB1500D8C9DA /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fila.h; path = Genius/Fila.h; sourceTree = SOURCE_ROOT; };
+		D4F86EA81A93EB1500D8C9DA /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fila.m; path = Genius/Fila.m; sourceTree = SOURCE_ROOT; };
+		D4F86EA91A93EB1500D8C9DA /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jogador.h; path = Genius/Jogador.h; sourceTree = SOURCE_ROOT; };
+		D4F86EAA1A93EB1500D8C9DA /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jogador.m; path = Genius/Jogador.m; sourceTree = SOURCE_ROOT; };
+		D4F86EAB1A93EB1500D8C9DA /* Jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jogo.h; path = Genius/Jogo.h; sourceTree = SOURCE_ROOT; };
+		D4F86EAC1A93EB1500D8C9DA /* Jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jogo.m; path = Genius/Jogo.m; sourceTree = SOURCE_ROOT; };
+		D4F86EAD1A93EB1500D8C9DA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Genius/main.m; sourceTree = SOURCE_ROOT; };
 		E3F98FC01A8E857E00479CA0 /* teste */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = teste; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3F98FC31A8E857E00479CA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E3F98FCA1A8E86FD00479CA0 /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
-		E3F98FCB1A8E86FD00479CA0 /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
-		E3F98FCD1A8EA85A00479CA0 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
-		E3F98FCE1A8EA85A00479CA0 /* Jogador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogador.m; sourceTree = "<group>"; };
-		E3F98FCF1A8EA85A00479CA0 /* Jogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogo.h; sourceTree = "<group>"; };
-		E3F98FD01A8EA85A00479CA0 /* Jogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jogo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +66,13 @@
 		E3F98FC21A8E857E00479CA0 /* teste */ = {
 			isa = PBXGroup;
 			children = (
-				E3F98FCD1A8EA85A00479CA0 /* Jogador.h */,
-				E3F98FCE1A8EA85A00479CA0 /* Jogador.m */,
-				E3F98FCF1A8EA85A00479CA0 /* Jogo.h */,
-				E3F98FD01A8EA85A00479CA0 /* Jogo.m */,
-				E3F98FCA1A8E86FD00479CA0 /* Fila.h */,
-				E3F98FCB1A8E86FD00479CA0 /* Fila.m */,
-				E3F98FC31A8E857E00479CA0 /* main.m */,
+				D4F86EA71A93EB1500D8C9DA /* Fila.h */,
+				D4F86EA81A93EB1500D8C9DA /* Fila.m */,
+				D4F86EA91A93EB1500D8C9DA /* Jogador.h */,
+				D4F86EAA1A93EB1500D8C9DA /* Jogador.m */,
+				D4F86EAB1A93EB1500D8C9DA /* Jogo.h */,
+				D4F86EAC1A93EB1500D8C9DA /* Jogo.m */,
+				D4F86EAD1A93EB1500D8C9DA /* main.m */,
 			);
 			path = teste;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E3F98FBB1A8E857E00479CA0 /* Build configuration list for PBXProject "teste" */;
+			buildConfigurationList = E3F98FBB1A8E857E00479CA0 /* Build configuration list for PBXProject "Genius" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -133,10 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3F98FD21A8EA85A00479CA0 /* Jogo.m in Sources */,
-				E3F98FC41A8E857E00479CA0 /* main.m in Sources */,
-				E3F98FD11A8EA85A00479CA0 /* Jogador.m in Sources */,
-				E3F98FCC1A8E86FD00479CA0 /* Fila.m in Sources */,
+				D4F86EB01A93EB1500D8C9DA /* Jogo.m in Sources */,
+				D4F86EAF1A93EB1500D8C9DA /* Jogador.m in Sources */,
+				D4F86EB11A93EB1500D8C9DA /* main.m in Sources */,
+				D4F86EAE1A93EB1500D8C9DA /* Fila.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +234,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E3F98FBB1A8E857E00479CA0 /* Build configuration list for PBXProject "teste" */ = {
+		E3F98FBB1A8E857E00479CA0 /* Build configuration list for PBXProject "Genius" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E3F98FC51A8E857E00479CA0 /* Debug */,
@@ -250,6 +250,7 @@
 				E3F98FC91A8E857E00479CA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

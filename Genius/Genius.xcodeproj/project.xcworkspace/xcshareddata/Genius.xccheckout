@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A11A0F2B-ED27-43E5-BC54-400CF60303D4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Genius</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>539EA090829AFD006408923E7977226895BEFC97</key>
+		<string>https://github.com/vichiodo/Genius</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Genius/Genius.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>539EA090829AFD006408923E7977226895BEFC97</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vichiodo/Genius</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>539EA090829AFD006408923E7977226895BEFC97</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>539EA090829AFD006408923E7977226895BEFC97</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Genius</string>
+		</dict>
+	</array>
+</dict>
+</plist>
