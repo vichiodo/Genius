@@ -2,8 +2,8 @@
 //  Fila.m
 //  Fila
 //
-//  Created by Rafael  Hieda on 06/02/15.
-//  Copyright (c) 2015 Rafael  Hieda. All rights reserved.
+//  Created by Grupinho lindo on 06/02/15.
+//  Copyright (c) 2015 Grupinho lindo. All rights reserved.
 //
 
 #import "Fila.h"

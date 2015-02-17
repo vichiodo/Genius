@@ -2,8 +2,8 @@
 //  Jogador.h
 //  Genius
 //
-//  Created by Rafael  Hieda on 13/02/15.
-//  Copyright (c) 2015 Rafael Hieda. All rights reserved.
+//  Created by Grupinho lindo on 13/02/15.
+//  Copyright (c) 2015 Grupinho lindo. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
