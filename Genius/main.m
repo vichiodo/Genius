@@ -13,7 +13,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // main
+        [[Jogo alloc] run];
         
     }
     return 0;

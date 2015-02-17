@@ -34,8 +34,8 @@
 -(NSInteger)gerarCor;
 -(void)run;
 -(void)prepareRound;
--(BOOL)check:(Fila *) jogadores;
--(void)choice;
+-(BOOL)check;
+-(NSUInteger *)choice;
 -(void)terminarJogo;
 
 @end

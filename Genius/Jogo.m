@@ -69,13 +69,14 @@
 
 -(void)run
 {
+    
     //aloquei o jogador para testar na verdade, mas sintam-se a vontade de adaptar o metodo.
-    Jogador *player = [[Jogador alloc] initWithLogin:[player login] ];
+    Jogador *player = [[Jogador alloc] initWithLogin: @"Rafael"];
     int pontuacao = 0;
     
     // instancia a fila que o jogador irá preencher e  servira de
     // parametro a fila criada pela maquina
-    Fila *jogadores = [[Fila alloc] init];
+    jogadores = [[Fila alloc] init];
     do
     {
         //inicia a fila desenfileirando tudo, porque ela tem que ser
@@ -97,12 +98,12 @@
         for(int i = 0; i < count; i++)
         {
             //enfileira cada escolha do jogador pelo metodo choice
-            [jogadores enfileirar: [NSNumber numberWithUnsignedLong: [ self choice]]];
+            [jogadores enfileirar: [NSNumber numberWithUnsignedLong: *[ self choice]]];
         }
         //contador local de jogadas
         pontuacao++;
         
-    } while([self check:jogadores] == true);
+    } while([self check] == true);
     
     //corrige a pontuacao por conta do laço de repetição
     pontuacao --;
@@ -134,7 +135,7 @@
     [self clearScreen];
 }
 
--(BOOL)check:(Fila *) jogadores
+-(BOOL)check
 {
     if([[jogo elementos]isEqualToArray: [jogadores elementos]])
         return true;
@@ -156,7 +157,7 @@
     [jogo enfileirar: [NSNumber numberWithUnsignedLong: [self gerarCor]]];
     [jogo imprimir];
     [self choice];
-    if (![self check: jogo]) {
+    if (![self check]) {
         [self terminarJogo];
     } else {
         [self lancarSequencia];
@@ -164,25 +165,28 @@
 }
 
 -(void)terminarJogo{
-    bool opcao;
+    NSString *opcao;
     NSLog(@"Você perdeu \n");
     NSLog(@"Sua pontuação: %i \n", [j pontuacao]);
     NSLog(@"Você jogou %i vezes: \n", [j incremento]);
     NSLog(@"Sua maior pontuação: %i \n", [j maiorPontuacao: [j pontuacao]]);
     NSLog(@"Deseja jogar novamente? \n");
-    NSLog(@"S/N \n");
-    scanf("%d", opcao);
-    if (opcao) {
-        
+    NSLog(@"Y/N \n");
+    if([opcao boolValue]){
+        [self clearScreen];
+        [self run];
+    }
+    else{
+        [self clearScreen];
+        [self paginaInicial];
     }
 }
 
-//INCOMPLETO
--(void)choice{
-    char seq[100];
+-(NSUInteger *)choice{
+    NSUInteger *escolha;
     NSLog(@"Digite a sequência: ");
-    scanf("%s", seq );
-    error
+    scanf("%ld", escolha );
+    return escolha;
 }
 
 @end
