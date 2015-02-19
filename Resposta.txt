@@ -1,0 +1,8 @@
+André, Rafael, Fernando, Vivi
+
+
+Utilizamos duas filas para o jogo.
+A fila do jogo gerada por números pseudo-aleatórios foi escolhida, pois filas apresentam como característica FIFO,
+(First-in, First out) que permite uma manipulação mais fácil dos dados, sem que haja preocupações.
+A fila dos jogadores foi escolhida, por que é uma estrutura que permite guardar dados. 
+Como o acesso dos jogadores não será grande, uma fila deve ser capaz de guardar estes dados facilmente.
